@@ -1,25 +1,99 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
 
 body{
-    background-color: chocolate;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    grid-template-rows: 0.1fr 1fr 0.1fr;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "navbar"
-    "carousel"
-    "comercios-auspicios";
-}
-nav{
-    grid-area: navbar;
-    width: 100%;
+    background-color: #d2691e ;
     
+}
+
+.header{
+    background-color: #10263D;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    padding: 5px;
+}
+.logo-estenis img{
+    width: 100px;
+    height: 100px;
+}
+.lista-navbar{
+    list-style: none;
+
+}
+.header .lista-navbar .item-lista{
+    display: inline-block;
+    padding: 0 20px;
+}
+.header .lista-navbar .item-lista:hover{
+    transform: scale(1.1);
+}
+
+.header .lista-navbar a{
+    font-size: 40px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header .lista-navbar a:hover{
+    color: #d2691e;
+}
+
+.header .boton{
+    font-weight: 700;
+    color:#d2691e ;
+    padding: 9px 25px;
+    background: #000000;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+
+
+.contenedor{
+    display: flex;
+    border: 1px solid #000000;
+    justify-content: center;
+    text-align: center;
+     
+}
+
+.contenedor-img1{
+    display: flex;
+    width: 450px;
+    height: 450px;  
+    padding: 20px;
+  
+    
+}
+.text{
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+h1{
+    font: 2em sans-serif;
+    background-color: #10263D;
+    color: wheat;
+    
+}
+.lista-partidos{
+    font-size: 25px;
+    list-style-type: none;
+    margin: 10px;
+    padding: 15px;
+}
+
+
+.comercios-auspicios{
+    display: flex;
+    justify-content: center;
+    height: 150px;
 }
 
 .carousel{
@@ -37,10 +111,5 @@ footer{
     grid-area: comercios-auspicios;
     height: 5%;
 
-}
-
-.container-fluid{
-    background-color: #10263D;
-    
 }
 
