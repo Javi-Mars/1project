@@ -5,111 +5,72 @@
 }
 
 body{
-    background-color: #d2691e ;
+    display: grid;
+    grid-template-rows: 100px 1fr 1fr 100px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "header header"
+    "contenedor contenedor"
+    "texto texto"
+    "footer footer";
+    background-color: #ffffff ;
     
 }
 
 .header{
-    background-color: #10263D;
+    grid-area: header;
     display: flex;
-    justify-content:space-between ;
-    align-items: center;
-    padding: 5px;
+    justify-content: space-between;
+    background-color: white;
+    
 }
 .logo-estenis img{
     width: 100px;
     height: 100px;
 }
 .lista-navbar{
+    display: flex;
     list-style: none;
-
 }
-.header .lista-navbar .item-lista{
-    display: inline-block;
-    padding: 0 20px;
-}
-.header .lista-navbar .item-lista:hover{
-    transform: scale(1.1);
-}
-
-.header .lista-navbar a{
-    font-size: 40px;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.header .lista-navbar a:hover{
-    color: #d2691e;
-}
-
-.header .boton{
-    font-weight: 700;
-    color:#d2691e ;
-    padding: 9px 25px;
-    background: #000000;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
-
-
-
-.contenedor{
-    display: flex;
-    border: 1px solid #000000;
-    justify-content: center;
-    text-align: center;
-     
-}
-
-.contenedor-img1{
-    display: flex;
-    width: 450px;
-    height: 450px;  
-    padding: 20px;
-  
-    
-}
-.text{
-    background-color: white;
-    color: black;
-    text-align: center;
-}
-h1{
-    font: 2em sans-serif;
-    background-color: #10263D;
-    color: wheat;
-    
-}
-.lista-partidos{
-    font-size: 25px;
-    list-style-type: none;
-    margin: 10px;
+.item-lista{
     padding: 15px;
 }
 
 
-.comercios-auspicios{
-    display: flex;
+.contenedor{
+    grid-area: contenedor;
+    display: flex;      
     justify-content: center;
-    height: 150px;
+
+}
+.contenedor-img1 img{
+    width: 360px;
+    border: 2px solid black;
 }
 
-.carousel{
-  grid-area: carousel;
-  width: 760px;
-  
+
+.text{
+    grid-area: texto;
+    align-items: center;
 }
-#carouselExampleCaptions{
-    justify-items: center;
+h1{
+   text-align: center;
+    background-color: black;
+    color: white;
+}
+.lista-partidos{
+    text-align: center;
+    list-style-type: none;
     
 }
 
 
-footer{
-    grid-area: comercios-auspicios;
-    height: 5%;
-
+.comercios-auspicios{
+    grid-area: footer;
+    display: flex;
+    width: 100px;
+    height: 100px;
 }
-
+.logo-comercio{
+    padding: 15px;
+}
