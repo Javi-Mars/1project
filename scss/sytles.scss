@@ -1,0 +1,124 @@
+$fondo:#EDA76F ;
+$naranja: #EDAB3A;
+$marron: #B55227;
+$azul: #003069;
+$verde: #0F374F;
+
+@import "torneos";
+@import "clases"; 
+@import "perfil";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;    
+}
+
+  
+
+
+.body{
+    background-color: $fondo;
+    font-family: "Coiny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    
+    .header{
+        display: flex;
+        
+        background-color: $naranja;
+        color: white;
+        height: 175px;
+        margin: 5px;
+        width: auto;
+        .logo-estenis{
+            img{
+                margin: 5px;
+                width: 150px;
+                height: 150px;
+                text-align: right;
+            }
+
+            
+        }
+    }
+    nav{
+        
+        .lista-navbar{
+           
+            
+            
+            .item-lista{
+                display: inline;
+                
+                list-style: none;
+                a{
+                    
+                    padding: 15px;
+                    color: $verde;
+                }
+               
+            }
+
+        }
+        
+    }
+
+   
+    h2{
+        text-align: center;
+        background-color: $verde;
+        color: white;
+        padding: 10px;
+        border: solid 2px black;
+        font-size: 50px;
+        box-shadow: 0px 0px 15px black;
+    }
+    .contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        border: solid 1px $marron;
+        
+    
+                
+        .contenedor-img1{
+            border: solid 2px black;
+            margin: 25px;
+            
+            
+            img{
+                width: 400px;
+            }
+            
+        }
+    }
+    
+    .text{
+        color: antiquewhite;
+        border: solid 2px black;
+        margin: 5px;
+        padding: 5px;
+        text-align: center;
+        h1{
+            background-color: $azul;
+            width: auto;
+        }
+        .lista-partidos{
+            list-style-type: none;
+            background-color: $marron;
+        }
+    }
+
+    .footer{
+        display: flex;
+        background-color: $azul;
+        justify-content: center;
+        .comercios-auspicios{
+            display: flex;
+            .logo-comercio{
+                width: 100px;
+            }
+        }
+    }
+}

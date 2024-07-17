@@ -1,0 +1,247 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Coiny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+body nav {
+  display: flex;
+  margin: 25px;
+}
+body nav .lista-navbar {
+  margin: 25px;
+  list-style-type: none;
+}
+body nav .boton {
+  margin: 25px;
+}
+body main .tabla-resultados {
+  width: auto;
+  color: #003069;
+  text-align: justify;
+}
+body main .tabla-resultados tr {
+  padding: 2px;
+  border: solid 2px black;
+}
+body main .tabla-resultados td {
+  padding: 2px;
+  border: solid 1px black;
+  background-color: #EDAB3A;
+}
+body main .tabla-resultados th {
+  padding: 5px;
+  border: solid 1px black;
+  text-align: center;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.body {
+  background-color: #EDA76F;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.body .header {
+  display: flex;
+  background-color: #EDAB3A;
+  color: white;
+  height: 175px;
+  margin: 5px;
+  width: auto;
+}
+.body .header .logo-estenis img {
+  margin: 5px;
+  width: 150px;
+  height: 150px;
+  text-align: right;
+}
+.body .clases {
+  display: flex;
+  padding: 15px;
+  font-weight: 700;
+}
+.body .clases .clases-individuales {
+  background-color: #B55227;
+  color: #0F374F;
+  border: solid 1px black;
+  margin: 5px;
+  box-shadow: 3px 3px;
+}
+.body .clases .clases-grupales {
+  background-color: #B55227;
+  color: #0F374F;
+  border: solid 1px black;
+  margin: 5px;
+  box-shadow: 3px 3px;
+}
+.body .clases .clases-escuelita {
+  background-color: #B55227;
+  color: #0F374F;
+  border: solid 1px black;
+  margin: 5px;
+  box-shadow: 3px 3px;
+}
+.body .clases .boton-contacto {
+  display: flex;
+}
+.body .clases .boton-contacto .clases-contacto {
+  box-shadow: none;
+  background-color: #EDAB3A;
+  color: #0F374F;
+  margin: auto;
+}
+.body .clases h2 {
+  text-align: center;
+  background-color: #EDA76F;
+  margin: 10px;
+  padding: 5px;
+}
+.body .clases p {
+  margin: 5px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EDA76F;
+  font-family: "Coiny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+body .header {
+  display: flex;
+  background-color: #EDAB3A;
+  color: white;
+  height: 175px;
+  margin: 5px;
+  width: auto;
+}
+body .header .logo-estenis img {
+  margin: 5px;
+  width: 150px;
+  height: 150px;
+  text-align: right;
+}
+body h1 {
+  background-color: #B55227;
+  color: white;
+  border: solid 2px black;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+body .formulario-inscripcion {
+  margin: auto;
+  padding: 15px;
+  border: solid 2px #EDAB3A;
+  color: white;
+  background-color: #003069;
+  max-width: 600px;
+  box-shadow: 0px 0px 45px #0F374F;
+}
+body .formulario-input {
+  padding: 24px;
+  margin: 5px;
+  border: solid 2px #EDAB3A;
+  max-width: 600px;
+  box-shadow: 0px 0px 10px black;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.body {
+  background-color: #EDA76F;
+  font-family: "Coiny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.body .header {
+  display: flex;
+  background-color: #EDAB3A;
+  color: white;
+  height: 175px;
+  margin: 5px;
+  width: auto;
+}
+.body .header .logo-estenis img {
+  margin: 5px;
+  width: 150px;
+  height: 150px;
+  text-align: right;
+}
+.body nav .lista-navbar .item-lista {
+  display: inline;
+  list-style: none;
+}
+.body nav .lista-navbar .item-lista a {
+  padding: 15px;
+  color: #0F374F;
+}
+.body h2 {
+  text-align: center;
+  background-color: #0F374F;
+  color: white;
+  padding: 10px;
+  border: solid 2px black;
+  font-size: 50px;
+  box-shadow: 0px 0px 15px black;
+}
+.body .contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border: solid 1px #B55227;
+}
+.body .contenedor .contenedor-img1 {
+  border: solid 2px black;
+  margin: 25px;
+}
+.body .contenedor .contenedor-img1 img {
+  width: 400px;
+}
+.body .text {
+  color: antiquewhite;
+  border: solid 2px black;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+}
+.body .text h1 {
+  background-color: #003069;
+  width: auto;
+}
+.body .text .lista-partidos {
+  list-style-type: none;
+  background-color: #B55227;
+}
+.body .footer {
+  display: flex;
+  background-color: #003069;
+  justify-content: center;
+}
+.body .footer .comercios-auspicios {
+  display: flex;
+}
+.body .footer .comercios-auspicios .logo-comercio {
+  width: 100px;
+}
+
+/*# sourceMappingURL=sytles.css.map */

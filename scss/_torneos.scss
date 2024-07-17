@@ -1,0 +1,60 @@
+$fondo:#EDA76F ;
+$naranja: #EDAB3A;
+$marron: #B55227;
+$azul: #003069;
+$verde: #0F374F;
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;    
+}
+
+body{
+    font-family: "Coiny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    nav{
+        display: flex;
+        margin: 25px;
+        .lista-navbar{
+            margin: 25px;
+            list-style-type: none;
+        }
+        .boton{
+            margin: 25px;
+        }
+    }
+
+    main{
+        
+        .tabla-resultados{
+            width: auto;
+            color: $azul;
+            text-align: justify;
+            tr{
+                padding: 2px;
+                border: solid 2px black;
+
+            }
+            td{
+                padding: 2px;
+                border: solid 1px black;
+                background-color: $naranja;
+            }
+            th{
+                padding: 5px;
+                border: solid 1px black;
+                text-align: center;
+            }
+        }
+        
+                
+            
+
+        
+
+    }
+}
