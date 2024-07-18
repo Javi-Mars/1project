@@ -114,11 +114,26 @@ $verde: #0F374F;
         display: flex;
         background-color: $azul;
         justify-content: center;
+        
         .comercios-auspicios{
             display: flex;
+            align-items: center;
+            
+            
             .logo-comercio{
-                width: 100px;
+                width: 150px;
+                margin: 15px;
+                
+
+                
+                
+                
             }
         }
     }
+    
 }
+
+
+    
+

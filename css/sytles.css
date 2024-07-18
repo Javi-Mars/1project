@@ -48,7 +48,9 @@ body main .tabla-resultados th {
 
 .body {
   background-color: #EDA76F;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Coiny", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 .body .header {
   display: flex;
@@ -239,9 +241,17 @@ body .formulario-input {
 }
 .body .footer .comercios-auspicios {
   display: flex;
+  align-items: center;
 }
 .body .footer .comercios-auspicios .logo-comercio {
-  width: 100px;
+  width: 150px;
+  margin: 15px;
 }
 
 /*# sourceMappingURL=sytles.css.map */
+
+@media screen and(max-width:600px){
+  .comercios-auspicios{
+      flex-direction: column;
+  }
+}
