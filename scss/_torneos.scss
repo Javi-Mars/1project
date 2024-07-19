@@ -13,22 +13,55 @@ $verde: #0F374F;
 }
 
 body{
+    display: grid;
+    grid-template-rows: auto auto;
     font-family: "Coiny", system-ui;
     font-weight: 400;
     font-style: normal;
-    nav{
+    
+    .header{
         display: flex;
-        margin: 25px;
-        .lista-navbar{
-            margin: 25px;
-            list-style-type: none;
+        
+        background-color: $naranja;
+        color: white;
+        height: 175px;
+        margin: 5px;
+        width: auto;
+        .logo-estenis{
+            img{
+                margin: 5px;
+                width: 150px;
+                height: 150px;
+                text-align: right;
+            }
+
+            
         }
-        .boton{
-            margin: 25px;
+        nav{
+        
+            .lista-navbar{
+               
+                
+                
+                .item-lista{
+                    display: inline;
+                    
+                    list-style: none;
+                    a{
+                        
+                        padding: 15px;
+                        color: $verde;
+                    }
+                   
+                }
+    
+            }
+            
         }
     }
-
     main{
+        
+        
         
         .tabla-resultados{
             width: auto;

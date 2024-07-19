@@ -18,6 +18,7 @@ $verde: #0F374F;
 
 
 .body{
+    display: grid;
     background-color: $fondo;
     font-family: "Coiny", system-ui;
     font-weight: 400;
@@ -25,7 +26,8 @@ $verde: #0F374F;
     
     .header{
         display: flex;
-        
+        justify-content: center;
+        align-items: center;               
         background-color: $naranja;
         color: white;
         height: 175px;
@@ -41,45 +43,48 @@ $verde: #0F374F;
 
             
         }
-    }
-    nav{
+        nav{
         
-        .lista-navbar{
-           
-            
-            
-            .item-lista{
-                display: inline;
-                
-                list-style: none;
-                a{
-                    
-                    padding: 15px;
-                    color: $verde;
-                }
+            .lista-navbar{
                
+                
+                
+                .item-lista{
+                    display: inline;
+                    
+                    list-style: none;
+                    a{
+                        
+                        padding: 15px;
+                        color: $verde;
+                    }
+                   
+                }
+    
             }
-
+            
         }
-        
     }
+    
 
    
-    h2{
-        text-align: center;
-        background-color: $verde;
-        color: white;
-        padding: 10px;
-        border: solid 2px black;
-        font-size: 50px;
-        box-shadow: 0px 0px 15px black;
-    }
+    
     .contenedor{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         border: solid 1px $marron;
-        
+
+        h2{
+            width: 100%;
+            text-align: center;
+            background-color: $verde;
+            color: white;
+            padding: 10px;
+            border: solid 2px black;
+            font-size: 50px;
+            box-shadow: 0px 0px 15px black;
+        }
     
                 
         .contenedor-img1{

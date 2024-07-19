@@ -5,20 +5,33 @@
 }
 
 body {
+  display: grid;
+  grid-template-rows: auto auto;
   font-family: "Coiny", system-ui;
   font-weight: 400;
   font-style: normal;
 }
-body nav {
+body .header {
   display: flex;
-  margin: 25px;
+  background-color: #EDAB3A;
+  color: white;
+  height: 175px;
+  margin: 5px;
+  width: auto;
 }
-body nav .lista-navbar {
-  margin: 25px;
-  list-style-type: none;
+body .header .logo-estenis img {
+  margin: 5px;
+  width: 150px;
+  height: 150px;
+  text-align: right;
 }
-body nav .boton {
-  margin: 25px;
+body .header nav .lista-navbar .item-lista {
+  display: inline;
+  list-style: none;
+}
+body .header nav .lista-navbar .item-lista a {
+  padding: 15px;
+  color: #0F374F;
 }
 body main .tabla-resultados {
   width: auto;
@@ -170,6 +183,7 @@ body .formulario-input {
 }
 
 .body {
+  display: grid;
   background-color: #EDA76F;
   font-family: "Coiny", system-ui;
   font-weight: 400;
@@ -177,6 +191,8 @@ body .formulario-input {
 }
 .body .header {
   display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #EDAB3A;
   color: white;
   height: 175px;
@@ -189,15 +205,22 @@ body .formulario-input {
   height: 150px;
   text-align: right;
 }
-.body nav .lista-navbar .item-lista {
+.body .header nav .lista-navbar .item-lista {
   display: inline;
   list-style: none;
 }
-.body nav .lista-navbar .item-lista a {
+.body .header nav .lista-navbar .item-lista a {
   padding: 15px;
   color: #0F374F;
 }
-.body h2 {
+.body .contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border: solid 1px #B55227;
+}
+.body .contenedor h2 {
+  width: 100%;
   text-align: center;
   background-color: #0F374F;
   color: white;
@@ -205,12 +228,6 @@ body .formulario-input {
   border: solid 2px black;
   font-size: 50px;
   box-shadow: 0px 0px 15px black;
-}
-.body .contenedor {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  border: solid 1px #B55227;
 }
 .body .contenedor .contenedor-img1 {
   border: solid 2px black;
@@ -249,9 +266,3 @@ body .formulario-input {
 }
 
 /*# sourceMappingURL=sytles.css.map */
-
-@media screen and(max-width:600px){
-  .comercios-auspicios{
-      flex-direction: column;
-  }
-}
