@@ -4,265 +4,108 @@
   box-sizing: border-box;
 }
 
-body {
-  display: grid;
-  grid-template-rows: auto auto;
-  font-family: "Coiny", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-body .header {
-  display: flex;
-  background-color: #EDAB3A;
-  color: white;
-  height: 175px;
-  margin: 5px;
-  width: auto;
-}
-body .header .logo-estenis img {
-  margin: 5px;
-  width: 150px;
-  height: 150px;
-  text-align: right;
-}
-body .header nav .lista-navbar .item-lista {
-  display: inline;
-  list-style: none;
-}
-body .header nav .lista-navbar .item-lista a {
-  padding: 15px;
-  color: #0F374F;
-}
-body main .tabla-resultados {
-  width: auto;
-  color: #003069;
-  text-align: justify;
-}
-body main .tabla-resultados tr {
-  padding: 2px;
-  border: solid 2px black;
-}
-body main .tabla-resultados td {
-  padding: 2px;
-  border: solid 1px black;
-  background-color: #EDAB3A;
-}
-body main .tabla-resultados th {
-  padding: 5px;
-  border: solid 1px black;
-  text-align: center;
-}
-
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
 .body {
-  background-color: #EDA76F;
-  font-family: "Coiny", system-ui;
-  font-weight: 400;
-  font-style: normal;
+  background-color: #c4c4c4;
 }
 .body .header {
+  background-color: #838383;
   display: flex;
-  background-color: #EDAB3A;
-  color: white;
-  height: 175px;
-  margin: 5px;
-  width: auto;
-}
-.body .header .logo-estenis img {
-  margin: 5px;
-  width: 150px;
-  height: 150px;
-  text-align: right;
-}
-.body .clases {
-  display: flex;
-  padding: 15px;
-  font-weight: 700;
-}
-.body .clases .clases-individuales {
-  background-color: #B55227;
-  color: #0F374F;
-  border: solid 1px black;
-  margin: 5px;
-  box-shadow: 3px 3px;
-}
-.body .clases .clases-grupales {
-  background-color: #B55227;
-  color: #0F374F;
-  border: solid 1px black;
-  margin: 5px;
-  box-shadow: 3px 3px;
-}
-.body .clases .clases-escuelita {
-  background-color: #B55227;
-  color: #0F374F;
-  border: solid 1px black;
-  margin: 5px;
-  box-shadow: 3px 3px;
-}
-.body .clases .boton-contacto {
-  display: flex;
-}
-.body .clases .boton-contacto .clases-contacto {
-  box-shadow: none;
-  background-color: #EDAB3A;
-  color: #0F374F;
-  margin: auto;
-}
-.body .clases h2 {
-  text-align: center;
-  background-color: #EDA76F;
-  margin: 10px;
-  padding: 5px;
-}
-.body .clases p {
-  margin: 5px;
-}
-
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #EDA76F;
-  font-family: "Coiny", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-body .header {
-  display: flex;
-  background-color: #EDAB3A;
-  color: white;
-  height: 175px;
-  margin: 5px;
-  width: auto;
-}
-body .header .logo-estenis img {
-  margin: 5px;
-  width: 150px;
-  height: 150px;
-  text-align: right;
-}
-body h1 {
-  background-color: #B55227;
-  color: white;
-  border: solid 2px black;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-}
-body .formulario-inscripcion {
-  margin: auto;
-  padding: 15px;
-  border: solid 2px #EDAB3A;
-  color: white;
-  background-color: #003069;
-  max-width: 600px;
-  box-shadow: 0px 0px 45px #0F374F;
-}
-body .formulario-input {
-  padding: 24px;
-  margin: 5px;
-  border: solid 2px #EDAB3A;
-  max-width: 600px;
-  box-shadow: 0px 0px 10px black;
-}
-
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
-.body {
-  display: grid;
-  background-color: #EDA76F;
-  font-family: "Coiny", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-.body .header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #EDAB3A;
-  color: white;
-  height: 175px;
-  margin: 5px;
-  width: auto;
-}
-.body .header .logo-estenis img {
-  margin: 5px;
-  width: 150px;
-  height: 150px;
-  text-align: right;
-}
-.body .header nav .lista-navbar .item-lista {
-  display: inline;
-  list-style: none;
-}
-.body .header nav .lista-navbar .item-lista a {
-  padding: 15px;
-  color: #0F374F;
-}
-.body .contenedor {
-  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  border: solid 1px #B55227;
+  align-items: center;
+  width: 100%;
+}
+.body .header .logo-estenis {
+  background-color: aqua;
+  text-align: center;
+  flex-basis: 50px;
+}
+.body .header .logo-estenis img {
+  width: 200px;
+  border-radius: 15px;
+  padding: 3px;
+}
+.body .header .nav-bar {
+  background-color: aqua;
+}
+.body .header .nav-bar .lista-navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none;
+}
+.body .header .nav-bar .lista-navbar .item-lista {
+  background-color: #754e4e;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+}
+.body .header .nav-bar .lista-navbar .item-lista:hover {
+  background-color: #000000;
+}
+.body .header .nav-bar .lista-navbar .item-lista .item-lista-link {
+  color: #000000;
+  text-decoration: none;
+}
+.body .header .nav-bar .lista-navbar .item-lista .item-lista-link:hover {
+  color: #754e4e;
+}
+.body .header .whatsapp-btn-container {
+  background-color: aqua;
+  flex-basis: 150px;
+  text-align: center;
+}
+.body .header .whatsapp-btn-container .whatsapp-btn {
+  color: #000000;
+  text-decoration: none;
 }
 .body .contenedor h2 {
-  width: 100%;
   text-align: center;
-  background-color: #0F374F;
-  color: white;
-  padding: 10px;
-  border: solid 2px black;
-  font-size: 50px;
-  box-shadow: 0px 0px 15px black;
+  background-color: #754e4e;
+  margin: 2px;
 }
-.body .contenedor .contenedor-img1 {
-  border: solid 2px black;
-  margin: 25px;
+.body .contenedor .contenedor-caja {
+  background-color: #838383;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px 10px;
 }
-.body .contenedor .contenedor-img1 img {
-  width: 400px;
+.body .contenedor .contenedor-caja .contenedor-img1 img {
+  width: 150px;
 }
 .body .text {
-  color: antiquewhite;
-  border: solid 2px black;
-  margin: 5px;
-  padding: 5px;
-  text-align: center;
-}
-.body .text h1 {
-  background-color: #003069;
-  width: auto;
-}
-.body .text .lista-partidos {
-  list-style-type: none;
-  background-color: #B55227;
-}
-.body .footer {
+  background-color: #838383;
   display: flex;
-  background-color: #003069;
-  justify-content: center;
-}
-.body .footer .comercios-auspicios {
-  display: flex;
+  flex-direction: column;
+  justify-items: center;
   align-items: center;
 }
 .body .footer .comercios-auspicios .logo-comercio {
   width: 150px;
-  margin: 15px;
+}
+
+@media screen and (max-width: 992px) {
+  .body .header {
+    background-color: #838383;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+  }
+  .body .header .nav-bar .lista-navbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .body .header .whatsapp-btn-container .whatsapp-btn {
+    color: #000000;
+    text-decoration: none;
+  }
 }
 
 /*# sourceMappingURL=sytles.css.map */

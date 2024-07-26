@@ -1,144 +1,155 @@
-$fondo:#EDA76F ;
-$naranja: #EDAB3A;
-$marron: #B55227;
-$azul: #003069;
-$verde: #0F374F;
+$fondo: #c4c4c4 ;
+$contenedores: #838383 ;
+$color-fuente: #000000 ;
+$contenedores2: #754e4e ;
 
-@import "torneos";
-@import "clases"; 
-@import "perfil";
+
 
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;    
+    box-sizing: border-box;
 }
-
-  
-
 
 .body{
-    display: grid;
     background-color: $fondo;
-    font-family: "Coiny", system-ui;
-    font-weight: 400;
-    font-style: normal;
+    
     
     .header{
+        background-color: $contenedores;
         display: flex;
-        justify-content: center;
-        align-items: center;               
-        background-color: $naranja;
-        color: white;
-        height: 175px;
-        margin: 5px;
-        width: auto;
-        .logo-estenis{
-            img{
-                margin: 5px;
-                width: 150px;
-                height: 150px;
-                text-align: right;
-            }
-
-            
-        }
-        nav{
-        
-            .lista-navbar{
-               
-                
-                
-                .item-lista{
-                    display: inline;
-                    
-                    list-style: none;
-                    a{
-                        
-                        padding: 15px;
-                        color: $verde;
-                    }
-                   
-                }
-    
-            }
-            
-        }
-    }
-    
-
-   
-    
-    .contenedor{
-        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        border: solid 1px $marron;
-
-        h2{
-            width: 100%;
+        align-items: center;
+        width: 100%;
+        
+        
+        
+        
+        
+        
+        .logo-estenis{
+            background-color: aqua;
             text-align: center;
-            background-color: $verde;
-            color: white;
-            padding: 10px;
-            border: solid 2px black;
-            font-size: 50px;
-            box-shadow: 0px 0px 15px black;
-        }
-    
-                
-        .contenedor-img1{
-            border: solid 2px black;
-            margin: 25px;
-            
-            
+            flex-basis: 50px;
             img{
-                width: 400px;
+                width: 200px;
+                border-radius: 15px;
+                padding: 3px;
+            }
+            
+        }
+        .nav-bar{
+            background-color: aqua;
+            
+            
+            
+            
+            .lista-navbar{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 0;
+                list-style: none;
+                
+                .item-lista{
+                    background-color: $contenedores2;
+                    text-align: center;
+                    padding: 10px;
+                    border-radius: 10px;
+                    margin: 5px;
+                    &:hover{
+                        background-color: $color-fuente;
+                    }
+                    
+                    .item-lista-link{
+                        color: $color-fuente;
+                        text-decoration: none;
+                        &:hover{
+                            color: $contenedores2   ;
+                        }
+                    }
+                }
+            }
+        }
+        .whatsapp-btn-container{
+            background-color: aqua;
+            flex-basis: 150px;
+            text-align: center;
+            .whatsapp-btn{
+                color: $color-fuente;
+                text-decoration: none;
+                
+                
+            }
+        }
+    }
+    
+    .contenedor{
+        h2{
+            text-align: center;
+            background-color: $contenedores2;
+            margin: 2px;
+        }
+        .contenedor-caja{
+            background-color: $contenedores;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0px 10px;            
+            .contenedor-img1{
+                img{
+                    width: 150px;
+                }
             }
             
         }
     }
-    
-    .text{
-        color: antiquewhite;
-        border: solid 2px black;
-        margin: 5px;
-        padding: 5px;
-        text-align: center;
-        h1{
-            background-color: $azul;
-            width: auto;
-        }
-        .lista-partidos{
-            list-style-type: none;
-            background-color: $marron;
-        }
-    }
 
-    .footer{
+    .text{
+        background-color: $contenedores;
         display: flex;
-        background-color: $azul;
-        justify-content: center;
-        
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+    .footer{
         .comercios-auspicios{
-            display: flex;
-            align-items: center;
-            
-            
             .logo-comercio{
                 width: 150px;
-                margin: 15px;
-                
+            }
 
+        }
+    }
+}
+
+@media screen and (max-width: 992px ) {
+    .body{
+        
+        .header{
+            background-color: $contenedores;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            gap: 10px;
+            .nav-bar{
                 
+                .lista-navbar{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    
+                }
+            }
+            .whatsapp-btn-container{
                 
-                
+                .whatsapp-btn{
+                    color: $color-fuente;
+                    text-decoration: none;
+                }
             }
         }
     }
-    
 }
-
-
-    
-
