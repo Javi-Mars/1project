@@ -1,0 +1,166 @@
+$fondo: #c4c4c4 ;
+$contenedores: #838383 ;
+$color-fuente: #000000 ;
+$contenedores2: #754e4e ;
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.body{
+    background-color: $fondo;
+    
+    
+    .header{
+        background-color: $contenedores;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        
+        
+        
+        
+        
+        
+        .logo-estenis{
+            background-color: aqua;
+            text-align: center;
+            flex-basis: 50px;
+            img{
+                width: 200px;
+                border-radius: 15px;
+                padding: 3px;
+            }
+            
+        }
+        .nav-bar{
+            background-color: aqua;
+            
+            
+            
+            
+            .lista-navbar{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 0;
+                list-style: none;
+                
+                .item-lista{
+                    background-color: $contenedores2;
+                    text-align: center;
+                    padding: 10px;
+                    border-radius: 10px;
+                    margin: 5px;
+                    &:hover{
+                        background-color: $color-fuente;
+                    }
+                    
+                    .item-lista-link{
+                        color: $color-fuente;
+                        text-decoration: none;
+                        &:hover{
+                            color: $contenedores2   ;
+                        }
+                    }
+                }
+            }
+        }
+        .whatsapp-btn-container{
+            background-color: aqua;
+            flex-basis: 150px;
+            text-align: center;
+            .whatsapp-btn{
+                color: $color-fuente;
+                text-decoration: none;
+                
+                
+            }
+        }
+    }
+    main{
+        text-align: center;
+        .text{
+            h1{
+                color: $color-fuente;
+                text-align: center;
+                background-color: $fondo;
+            }
+            .lista-partidos{
+                padding: 0;
+                text-align: center;
+                .item-categoria{
+                    list-style-type: none;
+                    background-color: lime;
+                    width: 100%;
+                }
+                .item-partido{
+                    list-style-type: none;
+                    background-color: white;
+                }
+            }
+        }
+        .container-tabla{
+            border: solid 1px black;
+            background-color: #c4c4c4;
+            .tabla-resultados{
+                margin:auto;
+                width: 100%;
+                thead{
+                    background-color: white;
+                    
+                    
+                }
+                tbody{
+                    tr{
+                        background-color: #754e4e;
+                        &:hover{
+                            background-color: aqua;
+                        } 
+                    }
+                    td{
+                        border: solid 1px black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 992px ) {
+    .body{
+        
+        .header{
+            background-color: $contenedores;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            gap: 10px;
+            .nav-bar{
+                
+                .lista-navbar{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    
+                }
+            }
+            .whatsapp-btn-container{
+                
+                .whatsapp-btn{
+                    color: $color-fuente;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

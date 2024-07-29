@@ -3,7 +3,7 @@ $contenedores: #838383 ;
 $color-fuente: #000000 ;
 $contenedores2: #754e4e ;
 
-
+@import "torneos";
 
 *{
     margin: 0px;
@@ -12,7 +12,7 @@ $contenedores2: #754e4e ;
 }
 
 .body{
-    background-color: $fondo;
+    background-color: $contenedores;
     
     
     .header{
@@ -86,43 +86,34 @@ $contenedores2: #754e4e ;
         }
     }
     
-    .contenedor{
-        h2{
-            text-align: center;
-            background-color: $contenedores2;
-            margin: 2px;
-        }
-        .contenedor-caja{
-            background-color: $contenedores;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            margin: 0px 10px;            
-            .contenedor-img1{
-                img{
-                    width: 150px;
+    #carouselExampleCaptions{
+        width: 470px;
+        border: solid 3px #000000;
+        margin: 5px auto;
+        .carousel-inner{
+            
+            .carousel-item{
+                
+                .carousel-caption{
+                    color: #000000;
                 }
             }
-            
         }
+        
     }
-
-    .text{
-        background-color: $contenedores;
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-    }
+    
     .footer{
+        text-align: center;
+        
         .comercios-auspicios{
             .logo-comercio{
                 width: 150px;
             }
-
         }
     }
+    
 }
+
 
 @media screen and (max-width: 992px ) {
     .body{

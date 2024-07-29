@@ -3,130 +3,139 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Clases</title>
-    
+    <title>Torneos - Es Tenis</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/sytles.css">
 
+    <!-- Fuente : via Google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Coiny&display=swap" rel="stylesheet">
 
+    <!-- Icono desplegable: via FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="../css/sytles.css">
+
   </head>
 
-  <body>
-      
+
+  <body class="body">
     <header class="header"> 
       <div class="logo-estenis">
         <img  src="../images/logo-estenis.jpg" alt="logo-estenis">
       </div>
-
-      <nav>
-
+      <nav class="nav-bar">
         <ul class="lista-navbar">
-          <li class="item-lista"> <a href="../pages/perfil.html">Inicio</a></li>
-          <li class="item-lista"> <a href="../pages/torneos.html">Torneos</a></li>
-          <li class="item-lista"> <a href="../pages/clases.html">Clases</a></li>
-          <li class="item-lista"> <a href="../pages/perfil.html">Mi Perfil</a></li>
-          <li class="item-lista"> <a href="../pages/perfil.html">Galeria de Recuerdos</a></li>
+          <li class="item-lista"> <a class="item-lista-link" href="../index.html">Inicio</a></li>
+          <li class="item-lista"> <a class="item-lista-link" href="../pages/torneos.html">Torneos</a></li>
+          <li class="item-lista"> <a class="item-lista-link" href="../pages/clases.html">Clases</a></li>
+          <li class="item-lista"> <a class="item-lista-link" href="../pages/perfil.html">Mi Perfil</a></li>
+          <li class="item-lista"> <a class="item-lista-link" href="../pages/galeria.html">Galeria de Recuerdos</a></li>
         </ul>
       </nav>
-
-      <a href="./pages/contactos.html"><button class="boton">Contacto</button></a>   
+      <div class="whatsapp-btn-container">
+        <a class="whatsapp-btn" href="https://wa.me/5493512254999">Consultas</a>        
+      </div>                         
     </header>
 
     <main class="main">
-
+      
+      <section class="text">
+        <h1>CALENDARIO DE PARTIDOS - 2° TORNEO GRUPOS 2024</h1>
+        <ol class="lista-partidos">
+          <li class="item-categoria">B2 Cuartos de Final</li>
+          <li class="item-partido">🔸Lunes 16 hs Carlos & Ceci Cancha 1 Sueño Dorado</li>
+          <li class="item-partido">🔸 Martes 11 hs Herman & Nacho cancha 2 La Estancia</li>
+          <li class="item-partido">🔸 Miércoles 14 hs Emi & Fer cancha 1 La Estancia</li>
+          <li class="item-partido">🔸 Miércoles 16 hs Edu & Diego cancha 2  La Estancia</li>
+          <li class="item-categoria">C1 Octavos</li>
+          <li class="item-partido">🔸 Hoy 14.30 Marce & Ale Sueño Dorado</li>
+          <li class="item-partido">🔸 Martes 14 hs Damian & Luis cancha 2 Sueño Dorado</li>
+          <li class="item-partido">🔸 Miércoles 16 hs Angel & Mauri Sueño Dorado</li>
+          <li class="item-partido">🔸 Jueves 16 hs Palito & Adolfo Sueño Dorado</li>
+          <li class="item-categoria">C2 Cuartos de Final</li>
+          <li class="item-partido">🔸 Lunes 14 hs Nico & Beto cancha 2 La Estancia</li>
+          <li class="item-partido">🔸 Martes 14 hs Marce & Javi cancha 1 Sueño Dorado</li>
+          <li class="item-partido">🔸 Miércoles 14 hs Gabriel & Leo cancha 2 La Estancia</li>
+          <li class="item-categoria">D1 Cuartos de Final</li>
+          <li class="item-partido">🔸 Miércoles 10 hs Javi & Lore cancha 1 La Estancia</li>
+          <li class="item-partido">🔸 Miércoles 17.30 hs Jesi & Hernán cancha 2 La Estancia</li>
+          <li class="item-partido">🔸 Viernes 11 hs Juani & Diego cancha 1 La Estancia</li>
+        </ol>
+    </section>
+    
+    
+    <div class="container-tabla">
       <table class="tabla-resultados">
-        <tr>
-          <th>Nombres de Jugadores/as</th>
-          <th>Torneo</th>
-          <th>Fecha de encuentro</th>
-          <th>Resultado del encuentro</th>
-          <th>Categoria</th>
+        <thead>
+          <tr>
+            <th>Nombres de Jugadores/as</th>
+            <th>Torneo</th>
+            <th>Fecha de encuentro</th>
+            <th>Resultado del encuentro</th>
+            <th>Categoria</th>
           </tr>
-        
-        <tr>
-          <td>Juan Alberto - Pedro Ramón</td>
-          <td>1° Torneo Eliminatorio</td>
-          <td>15/07/2024</td>
-          <td>Juan Alberto: 6/4 6/4</td>
-          <td>B1</td>
-        </tr> 
-        <tr>
-          <td>Juan Alberto - Pedro Ramón</td>
-          <td>1° Torneo Eliminatorio</td>
-          <td>15/07/2024</td>
-          <td>Juan Alberto: 6/4 6/4</td>
-          <td>B1</td>
-        </tr>  
-        <tr>
-          <td>Juan Alberto - Pedro Ramón</td>
-          <td>1° Torneo Eliminatorio</td>
-          <td>15/07/2024</td>
-          <td>Juan Alberto: 6/4 6/4</td>
-          <td>B1</td>
-        </tr>  
-        <tr>
-          <td>Juan Alberto - Pedro Ramón</td>
-          <td>1° Torneo Eliminatorio</td>
-          <td>15/07/2024</td>
-          <td>Juan Alberto: 6/4 6/4</td>
-          <td>B1</td>
-        </tr>  
-        <tr>
-          <td>Juan Alberto - Pedro Ramón</td>
-          <td>1° Torneo Eliminatorio</td>
-          <td>15/07/2024</td>
-          <td>Juan Alberto: 6/4 6/4</td>
-          <td>B1</td>
-        </tr>  
-        <tr>
-          <td>Juan Alberto - Pedro Ramón</td>
-          <td>1° Torneo Eliminatorio</td>
-          <td>15/07/2024</td>
-          <td>Juan Alberto: 6/4 6/4</td>
-          <td>B1</td>
-        </tr>   
-
-                
+        </thead>
+        <tbody>
+          <tr>
+            <td>Juan Alberto - Pedro Ramón</td>
+            <td>1° Torneo Eliminatorio</td>
+            <td>15/07/2024</td>
+            <td>Juan Alberto: 6/4 6/4</td>
+            <td>B1</td>
+          </tr> 
+          <tr>
+            <td>Juan Alberto - Pedro Ramón</td>
+            <td>1° Torneo Eliminatorio</td>
+            <td>15/07/2024</td>
+            <td>Juan Alberto: 6/4 6/4</td>
+            <td>B1</td>
+          </tr>  
+          <tr>
+            <td>Juan Alberto - Pedro Ramón</td>
+            <td>1° Torneo Eliminatorio</td>
+            <td>15/07/2024</td>
+            <td>Juan Alberto: 6/4 6/4</td>
+            <td>B1</td>
+          </tr>  
+          <tr>
+            <td>Juan Alberto - Pedro Ramón</td>
+            <td>1° Torneo Eliminatorio</td>
+            <td>15/07/2024</td>
+            <td>Juan Alberto: 6/4 6/4</td>
+            <td>B1</td>
+          </tr>  
+          <tr>
+            <td>Juan Alberto - Pedro Ramón</td>
+            <td>1° Torneo Eliminatorio</td>
+            <td>15/07/2024</td>
+            <td>Juan Alberto: 6/4 6/4</td>
+            <td>B1</td>
+          </tr>  
+          <tr>
+            <td>Juan Alberto - Pedro Ramón</td>
+            <td>1° Torneo Eliminatorio</td>
+            <td>15/07/2024</td>
+            <td>Juan Alberto: 6/4 6/4</td>
+            <td>B1</td>
+          </tr>   
+        </tbody>     
           
           
           
       </table>
-
+    </div>
 
     </main>
 
-
-
-         
-      
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <footer class="footer">
+      <div class="comercios-auspicios">
+        <img class="logo-comercio" src="../images/comercios/belen-lopez-img.jpeg" alt="">
+        <img class="logo-comercio" src="../images/comercios/conser-mov-suelo.jpeg" alt="">
+        <img class="logo-comercio" src="../images/comercios/fimpel-muebleria.jpeg" alt="">
+        <img class="logo-comercio" src="../images/comercios/la-maruca.jpeg" alt="">
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>

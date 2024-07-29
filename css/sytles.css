@@ -62,27 +62,141 @@
   color: #000000;
   text-decoration: none;
 }
-.body .contenedor h2 {
+.body main {
   text-align: center;
-  background-color: #754e4e;
-  margin: 2px;
 }
-.body .contenedor .contenedor-caja {
+.body main .text h1 {
+  color: #000000;
+  text-align: center;
+  background-color: #c4c4c4;
+}
+.body main .text .lista-partidos {
+  padding: 0;
+  text-align: center;
+}
+.body main .text .lista-partidos .item-categoria {
+  list-style-type: none;
+  background-color: lime;
+  width: 100%;
+}
+.body main .text .lista-partidos .item-partido {
+  list-style-type: none;
+  background-color: white;
+}
+.body main .container-tabla {
+  border: solid 1px black;
+  background-color: #c4c4c4;
+}
+.body main .container-tabla .tabla-resultados {
+  margin: auto;
+  width: 100%;
+}
+.body main .container-tabla .tabla-resultados thead {
+  background-color: white;
+}
+.body main .container-tabla .tabla-resultados tbody tr {
+  background-color: #754e4e;
+}
+.body main .container-tabla .tabla-resultados tbody tr:hover {
+  background-color: aqua;
+}
+.body main .container-tabla .tabla-resultados tbody td {
+  border: solid 1px black;
+}
+
+@media screen and (max-width: 992px) {
+  .body .header {
+    background-color: #838383;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+  }
+  .body .header .nav-bar .lista-navbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .body .header .whatsapp-btn-container .whatsapp-btn {
+    color: #000000;
+    text-decoration: none;
+  }
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.body {
+  background-color: #838383;
+}
+.body .header {
   background-color: #838383;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin: 0px 10px;
-}
-.body .contenedor .contenedor-caja .contenedor-img1 img {
-  width: 150px;
-}
-.body .text {
-  background-color: #838383;
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   align-items: center;
+  width: 100%;
+}
+.body .header .logo-estenis {
+  background-color: aqua;
+  text-align: center;
+  flex-basis: 50px;
+}
+.body .header .logo-estenis img {
+  width: 200px;
+  border-radius: 15px;
+  padding: 3px;
+}
+.body .header .nav-bar {
+  background-color: aqua;
+}
+.body .header .nav-bar .lista-navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none;
+}
+.body .header .nav-bar .lista-navbar .item-lista {
+  background-color: #754e4e;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+}
+.body .header .nav-bar .lista-navbar .item-lista:hover {
+  background-color: #000000;
+}
+.body .header .nav-bar .lista-navbar .item-lista .item-lista-link {
+  color: #000000;
+  text-decoration: none;
+}
+.body .header .nav-bar .lista-navbar .item-lista .item-lista-link:hover {
+  color: #754e4e;
+}
+.body .header .whatsapp-btn-container {
+  background-color: aqua;
+  flex-basis: 150px;
+  text-align: center;
+}
+.body .header .whatsapp-btn-container .whatsapp-btn {
+  color: #000000;
+  text-decoration: none;
+}
+.body #carouselExampleCaptions {
+  width: 470px;
+  border: solid 3px #000000;
+  margin: 5px auto;
+}
+.body #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption {
+  color: #000000;
+}
+.body .footer {
+  text-align: center;
 }
 .body .footer .comercios-auspicios .logo-comercio {
   width: 150px;
