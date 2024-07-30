@@ -87,7 +87,7 @@ $contenedores2: #754e4e ;
     }
     
     #carouselExampleCaptions{
-        width: auto;
+        width: 600px ;
         border: solid 3px #000000;
         margin: 5px auto;
         .carousel-inner{
@@ -140,7 +140,10 @@ $contenedores2: #754e4e ;
                     color: $color-fuente;
                     text-decoration: none;
                 }
-            }
+            }            
+        }
+        #carouselExampleCaptions{
+            width: auto;
         }
     }
 }

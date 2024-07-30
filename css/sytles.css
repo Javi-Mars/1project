@@ -188,7 +188,7 @@
   text-decoration: none;
 }
 .body #carouselExampleCaptions {
-  width: auto;
+  width: 600px;
   border: solid 3px #000000;
   margin: 5px auto;
 }
@@ -219,6 +219,9 @@
   .body .header .whatsapp-btn-container .whatsapp-btn {
     color: #000000;
     text-decoration: none;
+  }
+  .body #carouselExampleCaptions {
+    width: auto;
   }
 }
 
