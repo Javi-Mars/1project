@@ -1,7 +1,10 @@
-$fondo: #c4c4c4 ;
-$contenedores: #838383 ;
-$color-fuente: #000000 ;
-$contenedores2: #754e4e ;
+$fondo: #AEAAFF ;
+$contenedores: #837DFA ;
+$contenedores2: #06007A ;
+$separadores: #110F3B ;
+$color-fuente: #4C45CF ;
+$color-fuente2: #FFF1AA ;
+
 
 
 
@@ -30,7 +33,7 @@ $contenedores2: #754e4e ;
         
         
         .logo-estenis{
-            background-color: aqua;
+            
             text-align: center;
             flex-basis: 50px;
             img{
@@ -41,7 +44,7 @@ $contenedores2: #754e4e ;
             
         }
         .nav-bar{
-            background-color: aqua;
+            
             
             
             
@@ -57,6 +60,7 @@ $contenedores2: #754e4e ;
                     background-color: $contenedores2;
                     text-align: center;
                     padding: 10px;
+                    border: solid 2px white;
                     border-radius: 10px;
                     margin: 5px;
                     &:hover{
@@ -64,6 +68,8 @@ $contenedores2: #754e4e ;
                     }
                     
                     .item-lista-link{
+                        padding: 50px;
+                        margin: auto;
                         color: $color-fuente;
                         text-decoration: none;
                         &:hover{
@@ -89,40 +95,45 @@ $contenedores2: #754e4e ;
         text-align: center;
         .text{
             h1{
-                color: $color-fuente;
+                color: $color-fuente2 ;
                 text-align: center;
-                background-color: $fondo;
+                background-color: $contenedores2;
             }
             .lista-partidos{
                 padding: 0;
                 text-align: center;
                 .item-categoria{
                     list-style-type: none;
-                    background-color: lime;
+                    background-color: $separadores;
+                    color: $color-fuente2;
                     width: 100%;
                 }
                 .item-partido{
                     list-style-type: none;
                     background-color: white;
+                    &:hover{
+                        background-color: $fondo ;
+                    }
                 }
             }
         }
         .container-tabla{
             border: solid 1px black;
-            background-color: #c4c4c4;
+            background-color: $contenedores;
             .tabla-resultados{
                 margin:auto;
                 width: 100%;
                 thead{
-                    background-color: white;
+                    background-color: $contenedores;
                     
                     
                 }
                 tbody{
                     tr{
-                        background-color: #754e4e;
+                        background-color: $contenedores2;
+                        color: $color-fuente2;
                         &:hover{
-                            background-color: aqua;
+                            background-color: $separadores;
                         } 
                     }
                     td{
@@ -162,5 +173,9 @@ $contenedores2: #754e4e ;
                 }
             }
         }
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
     }
 }

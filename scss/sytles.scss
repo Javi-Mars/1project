@@ -1,7 +1,7 @@
-$fondo: #c4c4c4 ;
-$contenedores: #838383 ;
-$color-fuente: #000000 ;
-$contenedores2: #754e4e ;
+$fondo: #AEAAFF;
+$contenedores: #837DFA ;
+$color-fuente: #110F3B ;
+$contenedores2: #06007A ;
 
 @import "torneos";
 
@@ -12,7 +12,7 @@ $contenedores2: #754e4e ;
 }
 
 .body{
-    background-color: $contenedores;
+    background-color: $fondo;
     
     
     .header{
@@ -30,7 +30,7 @@ $contenedores2: #754e4e ;
         
         
         .logo-estenis{
-            background-color: aqua;
+            
             text-align: center;
             flex-basis: 50px;
             img{
@@ -41,7 +41,7 @@ $contenedores2: #754e4e ;
             
         }
         .nav-bar{
-            background-color: aqua;
+            
             
             
             
@@ -103,8 +103,10 @@ $contenedores2: #754e4e ;
     }
     
     .footer{
+        background-color: $contenedores;
         text-align: center;
-        
+        border: 1px solid $separadores ;
+        margin-top: 25px;        
         .comercios-auspicios{
             .logo-comercio{
                 width: 150px;

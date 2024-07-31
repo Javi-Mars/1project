@@ -5,10 +5,10 @@
 }
 
 .body {
-  background-color: #c4c4c4;
+  background-color: #AEAAFF;
 }
 .body .header {
-  background-color: #838383;
+  background-color: #837DFA;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -17,7 +17,6 @@
   width: 100%;
 }
 .body .header .logo-estenis {
-  background-color: aqua;
   text-align: center;
   flex-basis: 50px;
 }
@@ -25,9 +24,6 @@
   width: 200px;
   border-radius: 15px;
   padding: 3px;
-}
-.body .header .nav-bar {
-  background-color: aqua;
 }
 .body .header .nav-bar .lista-navbar {
   display: flex;
@@ -37,21 +33,24 @@
   list-style: none;
 }
 .body .header .nav-bar .lista-navbar .item-lista {
-  background-color: #754e4e;
+  background-color: #06007A;
   text-align: center;
   padding: 10px;
+  border: solid 2px white;
   border-radius: 10px;
   margin: 5px;
 }
 .body .header .nav-bar .lista-navbar .item-lista:hover {
-  background-color: #000000;
+  background-color: #4C45CF;
 }
 .body .header .nav-bar .lista-navbar .item-lista .item-lista-link {
-  color: #000000;
+  padding: 50px;
+  margin: auto;
+  color: #4C45CF;
   text-decoration: none;
 }
 .body .header .nav-bar .lista-navbar .item-lista .item-lista-link:hover {
-  color: #754e4e;
+  color: #06007A;
 }
 .body .header .whatsapp-btn-container {
   background-color: aqua;
@@ -59,16 +58,16 @@
   text-align: center;
 }
 .body .header .whatsapp-btn-container .whatsapp-btn {
-  color: #000000;
+  color: #4C45CF;
   text-decoration: none;
 }
 .body main {
   text-align: center;
 }
 .body main .text h1 {
-  color: #000000;
+  color: #FFF1AA;
   text-align: center;
-  background-color: #c4c4c4;
+  background-color: #06007A;
 }
 .body main .text .lista-partidos {
   padding: 0;
@@ -76,29 +75,34 @@
 }
 .body main .text .lista-partidos .item-categoria {
   list-style-type: none;
-  background-color: lime;
+  background-color: #110F3B;
+  color: #FFF1AA;
   width: 100%;
 }
 .body main .text .lista-partidos .item-partido {
   list-style-type: none;
   background-color: white;
 }
+.body main .text .lista-partidos .item-partido:hover {
+  background-color: #AEAAFF;
+}
 .body main .container-tabla {
   border: solid 1px black;
-  background-color: #c4c4c4;
+  background-color: #837DFA;
 }
 .body main .container-tabla .tabla-resultados {
   margin: auto;
   width: 100%;
 }
 .body main .container-tabla .tabla-resultados thead {
-  background-color: white;
+  background-color: #837DFA;
 }
 .body main .container-tabla .tabla-resultados tbody tr {
-  background-color: #754e4e;
+  background-color: #06007A;
+  color: #FFF1AA;
 }
 .body main .container-tabla .tabla-resultados tbody tr:hover {
-  background-color: aqua;
+  background-color: #110F3B;
 }
 .body main .container-tabla .tabla-resultados tbody td {
   border: solid 1px black;
@@ -106,7 +110,7 @@
 
 @media screen and (max-width: 992px) {
   .body .header {
-    background-color: #838383;
+    background-color: #837DFA;
     display: block;
     justify-content: center;
     align-items: center;
@@ -119,8 +123,12 @@
     flex-wrap: wrap;
   }
   .body .header .whatsapp-btn-container .whatsapp-btn {
-    color: #000000;
+    color: #4C45CF;
     text-decoration: none;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
   }
 }
 * {
@@ -130,10 +138,10 @@
 }
 
 .body {
-  background-color: #838383;
+  background-color: #AEAAFF;
 }
 .body .header {
-  background-color: #838383;
+  background-color: #837DFA;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -142,7 +150,6 @@
   width: 100%;
 }
 .body .header .logo-estenis {
-  background-color: aqua;
   text-align: center;
   flex-basis: 50px;
 }
@@ -150,9 +157,6 @@
   width: 200px;
   border-radius: 15px;
   padding: 3px;
-}
-.body .header .nav-bar {
-  background-color: aqua;
 }
 .body .header .nav-bar .lista-navbar {
   display: flex;
@@ -162,21 +166,21 @@
   list-style: none;
 }
 .body .header .nav-bar .lista-navbar .item-lista {
-  background-color: #754e4e;
+  background-color: #06007A;
   text-align: center;
   padding: 10px;
   border-radius: 10px;
   margin: 5px;
 }
 .body .header .nav-bar .lista-navbar .item-lista:hover {
-  background-color: #000000;
+  background-color: #4C45CF;
 }
 .body .header .nav-bar .lista-navbar .item-lista .item-lista-link {
-  color: #000000;
+  color: #4C45CF;
   text-decoration: none;
 }
 .body .header .nav-bar .lista-navbar .item-lista .item-lista-link:hover {
-  color: #754e4e;
+  color: #06007A;
 }
 .body .header .whatsapp-btn-container {
   background-color: aqua;
@@ -184,7 +188,7 @@
   text-align: center;
 }
 .body .header .whatsapp-btn-container .whatsapp-btn {
-  color: #000000;
+  color: #4C45CF;
   text-decoration: none;
 }
 .body #carouselExampleCaptions {
@@ -196,7 +200,10 @@
   color: #000000;
 }
 .body .footer {
+  background-color: #837DFA;
   text-align: center;
+  border: 1px solid #110F3B;
+  margin-top: 25px;
 }
 .body .footer .comercios-auspicios .logo-comercio {
   width: 150px;
@@ -204,7 +211,7 @@
 
 @media screen and (max-width: 992px) {
   .body .header {
-    background-color: #838383;
+    background-color: #837DFA;
     display: block;
     justify-content: center;
     align-items: center;
@@ -217,7 +224,7 @@
     flex-wrap: wrap;
   }
   .body .header .whatsapp-btn-container .whatsapp-btn {
-    color: #000000;
+    color: #4C45CF;
     text-decoration: none;
   }
   .body #carouselExampleCaptions {
