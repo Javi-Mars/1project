@@ -11,7 +11,7 @@
     .clases{
         display: flex;
         text-align: center;
-        
+        margin-top: 25px;
         .clases-individuales{
             border: 2px solid $contenedores;
             margin: 2px;
@@ -50,7 +50,11 @@
                 color: $color-fuente2;
                 border: none;
                 border-radius: 8px;
-                box-shadow: 5px 5px 5px $color-fuente   ;
+                box-shadow: 5px 5px 5px $color-fuente;
+                a{
+                    text-decoration: none;
+                    color: $color-fuente2;
+                }
             }
             
         }

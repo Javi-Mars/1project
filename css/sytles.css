@@ -117,6 +117,7 @@
 }
 .body main {
   text-align: center;
+  margin-top: 25px;
 }
 .body main .text h1 {
   color: #FFF1AA;
@@ -197,6 +198,7 @@
 .body .clases {
   display: flex;
   text-align: center;
+  margin-top: 25px;
 }
 .body .clases .clases-individuales {
   border: 2px solid #837DFA;
@@ -233,6 +235,10 @@
   border: none;
   border-radius: 8px;
   box-shadow: 5px 5px 5px #4C45CF;
+}
+.body .boton-contacto .clases-contacto a {
+  text-decoration: none;
+  color: #FFF1AA;
 }
 
 @media screen and (max-width: 992px) {
@@ -284,7 +290,6 @@
 }
 
 .body .titulo-galeria {
-  width: 100vw;
   margin-top: 15px;
   text-align: center;
   background-color: #110F3B;
@@ -321,6 +326,7 @@
 
 @media screen and (max-width: 992px) {
   .main-galeria {
+    grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "imagen" "aside";
   }
   .main-galeria .link-grid {
