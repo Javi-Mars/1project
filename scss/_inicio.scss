@@ -1,0 +1,162 @@
+$fondo: #AEAAFF ;
+$contenedores: #837DFA ;
+$contenedores2: #06007A ;
+$separadores: #110F3B ;
+$color-fuente: #4C45CF ;
+$color-fuente2: #FFF1AA ;
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.body{
+    background-color: $fondo;
+    
+    
+    .header{
+        background-color: $contenedores;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        
+        
+        
+        
+        
+        
+        .logo-estenis{
+            
+            text-align: center;
+            flex-basis: 50px;
+            img{
+                width: 200px;
+                border-radius: 15px;
+                padding: 3px;
+            }
+            
+        }
+        .nav-bar{
+            
+            
+            
+            
+            
+            .lista-navbar{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 0;
+                list-style: none;
+                
+                .item-lista{
+                    background-color: $contenedores2;
+                    text-align: center;
+                    border: 2px solid white;
+                    padding: 10px;
+                    border-radius: 10px;
+                    margin: 5px;
+                    &:hover{
+                        background-color: $contenedores;
+                    }
+                    
+                    .item-lista-link{
+                        color: $color-fuente2;
+                        text-decoration: none;
+                        &:hover{
+                            color: $contenedores2   ;
+                        }
+                    }
+                }
+            }
+        }
+        .whatsapp-btn-container{
+            background-color: #06007A;
+            border: 2px solid black;
+            color: $color-fuente2;
+            border-radius: 60px;
+            
+            padding: 5px 25px; 
+            flex-basis: 250px;
+            text-align: center;
+            &:hover{
+                box-shadow: inset 0px 1px 10px lime; 
+            }
+            .whatsapp-btn{
+                color: $color-fuente2;
+                text-decoration: none;
+                
+                
+            }
+        }
+    }
+    
+    #carouselExampleCaptions{
+        width: 600px ;
+        border: solid 3px #000000;
+        margin: 5px auto;
+        .carousel-inner{
+            
+            .carousel-item{
+                
+                .carousel-caption{
+                    color: #000000;
+                }
+            }
+        }
+        
+    }
+    
+    .footer{
+        background-color: $contenedores;
+        text-align: center;
+        border: 1px solid $separadores ;
+        margin-top: 25px;        
+        .comercios-auspicios{
+            .logo-comercio{
+                width: 150px;
+            }
+        }
+    }
+    
+}
+
+
+@media screen and (max-width: 992px ) {
+    .body{
+        
+        .header{
+            background-color: $contenedores;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            gap: 10px;
+            .nav-bar{
+                
+                .lista-navbar{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    
+                }
+            }
+            .whatsapp-btn-container{
+                
+                .whatsapp-btn{
+                    color: $color-fuente;
+                    text-decoration: none;
+
+                }
+            }            
+        }
+        #carouselExampleCaptions{
+            width: auto;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.body{
+    font-family: "Nunito Sans", sans-serif;
+    
+    .clases{
+        display: flex;
+        text-align: center;
+        
+        .clases-individuales{
+            border: 2px solid $contenedores;
+            margin: 2px;
+            &:hover{
+                background-color: $contenedores2;
+                color: $color-fuente2;
+                border: 3px solid black;
+            }
+        }
+        .clases-grupales{
+            border: 2px solid $contenedores;
+            margin: 2px;
+            &:hover{
+                background-color: $contenedores2;
+                color: $color-fuente2;
+                border: 3px solid black;
+            }
+        }
+        
+        .clases-escuelita{
+            border: 2px solid $contenedores;
+            margin: 2px;
+            &:hover{
+                background-color: $contenedores2;
+                color: $color-fuente2;
+                border: 3px solid black
+            }
+        }
+            
+        }
+        .boton-contacto{
+            .clases-contacto{
+                background-color: $contenedores2;
+                margin-bottom: 5px;
+                padding: 0px 25px;
+                color: $color-fuente2;
+                border: none;
+                border-radius: 8px;
+                box-shadow: 5px 5px 5px $color-fuente   ;
+            }
+            
+        }
+    }
+@media screen and (max-width: 992px ) {
+    .clases{
+        flex-direction: column;
+    }
+}

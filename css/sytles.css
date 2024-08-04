@@ -35,31 +35,85 @@
 .body .header .nav-bar .lista-navbar .item-lista {
   background-color: #06007A;
   text-align: center;
+  border: 2px solid white;
   padding: 10px;
-  border: solid 2px white;
   border-radius: 10px;
   margin: 5px;
 }
 .body .header .nav-bar .lista-navbar .item-lista:hover {
-  background-color: #4C45CF;
+  background-color: #837DFA;
 }
 .body .header .nav-bar .lista-navbar .item-lista .item-lista-link {
-  padding: 50px;
-  margin: auto;
-  color: #4C45CF;
+  color: #FFF1AA;
   text-decoration: none;
 }
 .body .header .nav-bar .lista-navbar .item-lista .item-lista-link:hover {
   color: #06007A;
 }
 .body .header .whatsapp-btn-container {
-  background-color: aqua;
-  flex-basis: 150px;
+  background-color: #06007A;
+  border: 2px solid black;
+  color: #FFF1AA;
+  border-radius: 60px;
+  padding: 5px 25px;
+  flex-basis: 250px;
   text-align: center;
 }
+.body .header .whatsapp-btn-container:hover {
+  box-shadow: inset 0px 1px 10px lime;
+}
 .body .header .whatsapp-btn-container .whatsapp-btn {
-  color: #4C45CF;
+  color: #FFF1AA;
   text-decoration: none;
+}
+.body #carouselExampleCaptions {
+  width: 600px;
+  border: solid 3px #000000;
+  margin: 5px auto;
+}
+.body #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption {
+  color: #000000;
+}
+.body .footer {
+  background-color: #837DFA;
+  text-align: center;
+  border: 1px solid #110F3B;
+  margin-top: 25px;
+}
+.body .footer .comercios-auspicios .logo-comercio {
+  width: 150px;
+}
+
+@media screen and (max-width: 992px) {
+  .body .header {
+    background-color: #837DFA;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+  }
+  .body .header .nav-bar .lista-navbar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .body .header .whatsapp-btn-container .whatsapp-btn {
+    color: #4C45CF;
+    text-decoration: none;
+  }
+  .body #carouselExampleCaptions {
+    width: auto;
+  }
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.body {
+  background-color: #AEAAFF;
 }
 .body main {
   text-align: center;
@@ -138,97 +192,144 @@
 }
 
 .body {
-  background-color: #AEAAFF;
+  font-family: "Nunito Sans", sans-serif;
 }
-.body .header {
-  background-color: #837DFA;
+.body .clases {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-}
-.body .header .logo-estenis {
   text-align: center;
-  flex-basis: 50px;
 }
-.body .header .logo-estenis img {
-  width: 200px;
-  border-radius: 15px;
-  padding: 3px;
+.body .clases .clases-individuales {
+  border: 2px solid #837DFA;
+  margin: 2px;
 }
-.body .header .nav-bar .lista-navbar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0;
-  list-style: none;
-}
-.body .header .nav-bar .lista-navbar .item-lista {
+.body .clases .clases-individuales:hover {
   background-color: #06007A;
-  text-align: center;
-  padding: 10px;
-  border-radius: 10px;
-  margin: 5px;
+  color: #FFF1AA;
+  border: 3px solid black;
 }
-.body .header .nav-bar .lista-navbar .item-lista:hover {
-  background-color: #4C45CF;
+.body .clases .clases-grupales {
+  border: 2px solid #837DFA;
+  margin: 2px;
 }
-.body .header .nav-bar .lista-navbar .item-lista .item-lista-link {
-  color: #4C45CF;
-  text-decoration: none;
+.body .clases .clases-grupales:hover {
+  background-color: #06007A;
+  color: #FFF1AA;
+  border: 3px solid black;
 }
-.body .header .nav-bar .lista-navbar .item-lista .item-lista-link:hover {
-  color: #06007A;
+.body .clases .clases-escuelita {
+  border: 2px solid #837DFA;
+  margin: 2px;
 }
-.body .header .whatsapp-btn-container {
-  background-color: aqua;
-  flex-basis: 150px;
-  text-align: center;
+.body .clases .clases-escuelita:hover {
+  background-color: #06007A;
+  color: #FFF1AA;
+  border: 3px solid black;
 }
-.body .header .whatsapp-btn-container .whatsapp-btn {
-  color: #4C45CF;
-  text-decoration: none;
-}
-.body #carouselExampleCaptions {
-  width: 600px;
-  border: solid 3px #000000;
-  margin: 5px auto;
-}
-.body #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption {
-  color: #000000;
-}
-.body .footer {
-  background-color: #837DFA;
-  text-align: center;
-  border: 1px solid #110F3B;
-  margin-top: 25px;
-}
-.body .footer .comercios-auspicios .logo-comercio {
-  width: 150px;
+.body .boton-contacto .clases-contacto {
+  background-color: #06007A;
+  margin-bottom: 5px;
+  padding: 0px 25px;
+  color: #FFF1AA;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px #4C45CF;
 }
 
 @media screen and (max-width: 992px) {
-  .body .header {
-    background-color: #837DFA;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    gap: 10px;
+  .clases {
+    flex-direction: column;
   }
-  .body .header .nav-bar .lista-navbar {
-    display: flex;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.body .formulario-inscripcion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  background-color: #837DFA;
+  box-shadow: inset 3px 3px 45px #06007A;
+  margin-top: 25px;
+  padding: 25px;
+}
+.body .formulario-inscripcion h1 {
+  background-color: #AEAAFF;
+  color: #FFF1AA;
+  border: 1px solid #06007A;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 25px;
+  width: 100%;
+  text-transform: uppercase;
+}
+.body .formulario-inscripcion .formulario-input {
+  border: 2px solid black;
+  width: 50%;
+  text-align: center;
+}
+.body .formulario-inscripcion .formulario-input:hover {
+  border: 2px solid white;
+  color: #FFF1AA;
+  background-color: #110F3B;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.body .titulo-galeria {
+  width: 100vw;
+  margin-top: 15px;
+  text-align: center;
+  background-color: #110F3B;
+  color: #FFF1AA;
+}
+.body .main-galeria {
+  display: grid;
+  margin-top: 15px;
+  grid-template-rows: repeat(3, 3fr);
+  justify-items: center;
+  align-items: center;
+  height: auto;
+  grid-template-areas: "titulo" "imagen" "aside";
+}
+.body .main-galeria .link-grid {
+  padding: 15px;
+  grid-area: titulo;
+  background-color: #06007A;
+}
+.body .main-galeria .img {
+  display: flex;
+  flex-direction: row;
+  grid-area: imagen;
+  background-color: #837DFA;
+}
+.body .main-galeria .img img {
+  width: 200px;
+  height: auto;
+}
+.body .main-galeria .redes-sociales {
+  grid-area: aside;
+  background-color: #06007A;
+}
+
+@media screen and (max-width: 992px) {
+  .main-galeria {
+    grid-template-areas: "imagen" "aside";
+  }
+  .main-galeria .link-grid {
+    display: none;
+  }
+  .main-galeria .img {
     flex-direction: column;
     flex-wrap: wrap;
-  }
-  .body .header .whatsapp-btn-container .whatsapp-btn {
-    color: #4C45CF;
-    text-decoration: none;
-  }
-  .body #carouselExampleCaptions {
-    width: auto;
+    grid-template-rows: minmax 150px, 850px;
   }
 }
 
