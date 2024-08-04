@@ -6,6 +6,7 @@
 
 .body {
   background-color: #AEAAFF;
+  font-family: "Nunito Sans", sans-serif;
 }
 .body .header {
   background-color: #837DFA;
@@ -66,6 +67,13 @@
   color: #FFF1AA;
   text-decoration: none;
 }
+.body h1 {
+  margin-top: 10px;
+  text-align: center;
+  color: #FFF1AA;
+  background-color: #110F3B;
+  border: 2px solid white;
+}
 .body #carouselExampleCaptions {
   width: 600px;
   border: solid 3px #000000;
@@ -114,6 +122,7 @@
 
 .body {
   background-color: #AEAAFF;
+  font-family: "Nunito Sans", sans-serif;
 }
 .body main {
   text-align: center;
@@ -252,6 +261,9 @@
   box-sizing: border-box;
 }
 
+.body {
+  font-family: "Nunito Sans", sans-serif;
+}
 .body .formulario-inscripcion {
   display: flex;
   flex-direction: column;
@@ -289,6 +301,9 @@
   box-sizing: border-box;
 }
 
+.body {
+  font-family: "Nunito Sans", sans-serif;
+}
 .body .titulo-galeria {
   margin-top: 15px;
   text-align: center;
